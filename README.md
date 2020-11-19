@@ -1,8 +1,8 @@
-#Blog - Laravel From Scratch App
+# Blog - Laravel From Scratch App
 This is the source code for the pet-project blog
 
-Version
+## Version
 1.0.0
 
-Database
+## Database
 The sql dump is in _SQL/blog.sql
