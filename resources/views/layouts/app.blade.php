@@ -17,6 +17,7 @@
     </style>
     <main role="main" class="flex-shrink-0">
     <div class="container">
+        @include('inc.messages')
         @yield('content')
     </div>
    </main>
