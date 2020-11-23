@@ -10,4 +10,9 @@
   <small>Written on {{$post->created_at}} by user</small>
   <hr>
   <a href="/posts/{{$post->id}}/edit" class="btn btn-danger">Edit</a>
+
+  {!! Form::open(['route' => ['posts.destroy',$post->id], 'method' => 'DELETE', 'enctype' => 'multipart/form-data', 'class' => 'float-right']) !!}
+                {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+  {!!Form::close()!!}
+
 @endsection
