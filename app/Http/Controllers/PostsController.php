@@ -15,7 +15,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-     
+      $posts = DB::select('SELECT * FROM posts');
+      return view('posts.index')->with('posts',$posts);
     }
 
     /**
@@ -36,7 +37,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-      
+     
     }
 
     /**
