@@ -8,4 +8,6 @@
   </div>
   <hr>
   <small>Written on {{$post->created_at}} by user</small>
+  <hr>
+  <a href="/posts/{{$post->id}}/edit" class="btn btn-danger">Edit</a>
 @endsection
